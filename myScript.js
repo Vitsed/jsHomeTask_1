@@ -39,6 +39,7 @@ function chooseExpanses() {
 
 chooseExpanses();
 
+//homework func 1
 function detectDayBudget() {
     appData.moneyPerDay = (appData.budget / 30).toFixed();
     alert("Ежедневный бюджет: " + appData.moneyPerDay);
@@ -46,6 +47,7 @@ function detectDayBudget() {
 
 detectDayBudget();
 
+//homework func 2
 function detectLevel() {
     
     if(appData.moneyPerDay < 100) {
@@ -60,6 +62,17 @@ function detectLevel() {
 }
 
 detectLevel();
+
+//homework func 3
+
+function chooseOptExpenses() {
+    for(let i = 1; i <= 3; i++) {
+        let c = prompt("Статья необязательных расходов?", '');
+        appData.optionalExpenses[i] = c;
+    }
+}
+
+// chooseOptExpenses();
 
 function checkSavings() {
     if(appData.savings == true) {
