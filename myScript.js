@@ -71,6 +71,7 @@ let appData = {
     
     chooseIncome: function() {
     
+        let items, index;
         for(let i = 0; i < 1; i++) {
             let items = prompt('Что принесет дополнительный доход? (Перечислите через запятую)', '');
       
@@ -82,5 +83,16 @@ let appData = {
                 i--;
             }
         }
+
+        appData.income.forEach (function (itemmassive, i) {
+            alert("Способы доп. заработка: " + (i+1) + " - " + itemmassive);
+        });
+
     }
+
+
 };
+
+for (let key in appData) {
+    console.log("Наша программа включает в себя данные: " + key + " - " + appData[key]);
+}
