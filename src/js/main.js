@@ -61,8 +61,9 @@ let exp1 = document.getElementsByClassName('expenses-item')[0],
     exp3 = document.getElementsByClassName('expenses-item')[2], 
     exp4 = document.getElementsByClassName('expenses-item')[3]; 
 
-//4
+//4 пропустил одну кнопку с индексом 1 )
 let confirm = document.getElementsByTagName('button')[0],
+    confirm2 = document.getElementsByTagName('button')[1],
     calculate = document.getElementsByTagName('button')[2];
     
 //5
@@ -78,5 +79,3 @@ let chooseIncome = document.querySelector('.choose-income'),
     year = document.querySelector('.year-value'), 
     month = document.querySelector('.month-value'), 
     day = document.querySelector('.day-value');
-   
-    console.log(day);
