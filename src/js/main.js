@@ -72,7 +72,7 @@ let optionalExp1 = document.querySelectorAll('.optionalexpenses-item')[0],
     optionalExp3 = document.querySelectorAll('.optionalexpenses-item')[2];
 
 //6
-let chooseIncome = document.querySelector('.choose-income'), 
+let incomeItem = document.querySelector('.choose-income'), 
     checkSavings = document.querySelector('#savings'),
     sum = document.querySelector('#sum'), 
     percent = document.querySelector('#percent'),
